@@ -41,10 +41,12 @@ interface User {
 }
 
 interface RootState {
-  game: Game,
+  game1: Game,
+  game2: Game,
   corners: CornersDict,
   cornersMultiple: { [board: string]: CornersDict },
-  user: User
+  user: User,
+  gameMultiple: { board1: Game, board2: Game } // Add this line
 }
 
 interface TwoBoardsState {
