@@ -79,3 +79,9 @@ export const drawBox = (ctx: any, colour: string, cx: number, cy: number, text: 
   ctx.fillStyle = "#ffffff";
   ctx.fillText(text, x, y);
 }
+
+export const drawBoxes = (ctx: any, boxes: { colour: string, cx: number, cy: number, text: string }[], fontHeight: number, lineWidth: number) => {
+  boxes.forEach(box => {
+    drawBox(ctx, box.colour, box.cx, box.cy, box.text, fontHeight, lineWidth);
+  });
+};
