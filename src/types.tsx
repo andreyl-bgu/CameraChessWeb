@@ -46,7 +46,7 @@ interface RootState {
   user: User
 }
 
-type Mode = "record" | "upload" | "broadcast" | "play";
+type Mode = "record" | "upload" | "broadcast" | "play" | "multiboard";
 
 type SetBoolean = React.Dispatch<React.SetStateAction<boolean>>
 type SetString = React.Dispatch<React.SetStateAction<string>>

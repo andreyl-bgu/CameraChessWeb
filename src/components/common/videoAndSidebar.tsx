@@ -15,6 +15,7 @@ import { userSelect } from "../../slices/userSlice";
 import { START_FEN } from "../../utils/constants";
 import PlaySidebar from "../play/playSidebar";
 import { useMediaQuery } from 'react-responsive';
+import MultiboardSidebar from "../multiboard/multiboardSidebar.tsx";
 
 const PortraitWarning = () => {
   return (
@@ -101,6 +102,7 @@ const VideoAndSidebar = ({ mode }: { mode: Mode }) => {
       case "upload": return <UploadSidebar {...props} />
       case "play": return <PlaySidebar {...props} />
       case "broadcast": return <BroadcastSidebar {...props} />
+      case "multiboard": return <MultiboardSidebar {...props} />
     }
   }
 
